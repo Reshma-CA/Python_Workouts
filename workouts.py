@@ -29,35 +29,35 @@ else:
 
 #1.	Accept a char input from the user and display it on the console.
 
-'''name = input("Enter a name:")
-print(name)'''
+name = input("Enter a name:")
+print(name)
 
 #2.	Accept two inputs from the user and output its sum.
 
-'''num1 = int(input("Enter first number:"))
+num1 = int(input("Enter first number:"))
 num2 = float(input("Enter Second number:"))
 sum = num1+num2
-print("Sum of two number is",sum)'''
+print("Sum of two number is",sum)
 
 # 3.	Write a program to find the simple interest.
 # a.	Program should accept 3 inputs from the user and calculate simple interest for the given inputs. Formula: SI=(P*R*n)/100)
 
-'''P = int(input("Enter principal amount:"))
+P = int(input("Enter principal amount:"))
 R = float(input("Enter interest rate:"))
 n = float(input("Enter number of years:"))
 
 SI = (P*R*n)/100
-print(SI)'''
+print(SI)
 
 # 4.	Write a program to check whether a student has passed or failed in a subject after he or she enters their mark (pass mark for a subject is 50 out of 100).
 # a.	Program should accept an input from the user and output a message as “Passed” or “Failed”
 
-'''mark = float(input("Enter a mark:"))
+mark = float(input("Enter a mark:"))
 if mark>=50:
     print("Passed")
 
 else:
-    print("Failed")'''
+    print("Failed")
 
 # 5.	 Write a program to show the grade obtained by a student after he/she enters their total mark percentage.
 # a.	Program should accept an input from the user and display their grade as follows
