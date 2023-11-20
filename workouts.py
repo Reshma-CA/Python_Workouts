@@ -120,7 +120,7 @@ for i in range(1,num+1):
         print(j,end = " ")
     print()
 
-# Program should accept a string and display whether the string is a palindrome or not
+# 9, Program should accept a string and display whether the string is a palindrome or not
 # Eg: Output: Enter a string
 # Input: MALAYALAM
 # Output: Entered string is a palindrome
@@ -148,3 +148,34 @@ if palindrome(word):
 
 else:
     print("Enterd string is not a palindrome")
+
+# 10.	Write a program to print the following pattern (hint: use nested loop)
+
+# *
+# * *
+# * * *
+# * * * *
+# * * * * *
+
+num = int(input("Enter a number:"))
+for i in range(1,num+1):
+    for j in range(1,i+1):
+        print("*", end = "")
+    print()
+
+# 11.	Write a program to print the following pattern (hint: use nested loop)
+
+# * * * * *
+# * * * *
+# * * *
+# * * 
+# * 
+
+
+num = int(input("Enter a number:"))
+for i in range(1,num+1):
+    for j in range(i,num+1):
+        print("*",end = "")
+    print()
+
+
