@@ -1,31 +1,4 @@
-# str1 = input("Enter a name")
-# str2 = ""
 
-# for i in str1:
-#     str2 += i
-
-# print(str1)
-# print(str2)
-# if str1 == str2 :
-#     print(str1,"is a palindrome:")
-
-# else:
-#     print(str1,"is not apalindrome")
-
-
-'''str1 = input("Enter a name")
-str2 = ""
-
-for i in str1[::-1]:
-    str2 += i
-
-print(str1)
-print(str2)
-if str1 == str2 :
-    print(str1,"is a palindrome:")
-
-else:
-    print(str1,"is not apalindrome")'''
 
 #1.	Accept a char input from the user and display it on the console.
 
@@ -79,4 +52,99 @@ else:
 # 6.	Using the ‘switch case’ write a program to accept an input number from the user and output the day as follows. 
 
 
+print("1.Sunday,\n2.monday,\n3.Tuesday,\n.Wednesday,\n4.Thursay,\n5.Friday,\n6.Saturday,\n7.Sunday")
 
+x = int(input("Enter a number:"))
+
+if x == 1:
+    print("Sunday")
+
+elif x ==2:
+    print("Monday")
+
+elif x ==3:
+    print("Tuesday")
+
+elif x ==4:
+    print("Wednesday")
+
+elif x ==5:
+    print("Thursday")
+
+elif x == 6:
+    print("friday")
+
+elif x == 7:
+    print("Saturday")
+
+else:
+    print("invalid input!!!")
+
+# 7.	Write a program to print the multiplication table of given numbers. Using for and while
+# a.	Accept an input from the user and display its multiplication table
+
+# Using for loop
+
+num = int(input("input a number:"))
+
+for i in range (1,11):
+    k = i*num
+    print(f" {i} x {num} = {k}")
+
+for i in range(1,11):
+    print(f"{i} x {num} = {i*num}")
+
+
+# Using While loop
+
+num = int(input("Enter a number:"))
+count = 1
+
+print("The multiplication table is:")
+
+while count<=num:
+    print(f"{num} x {count} = {num*count}")
+    count+=1
+
+# 8.	Write a program to print the following pattern (hint: use nested loop)
+
+# 1
+# 1 2
+# 1 2 3
+# 1 2 3 4
+# 1 2 3 4 5
+
+num  = int(input("Enter a number:"))
+for i in range(1,num+1):
+    for j in range(1,i+1):
+        print(j,end = " ")
+    print()
+
+# Program should accept a string and display whether the string is a palindrome or not
+# Eg: Output: Enter a string
+# Input: MALAYALAM
+# Output: Entered string is a palindrome
+
+name = input("Enter a name:")
+if name == name[::-1]:
+    print(name,"It is a palindrome")
+else:
+    print(name,"is not a palindrome")
+
+
+def palindrome(x):
+    x = x.upper()
+
+    x = ''.join(x.split())
+    if x == x[::-1]:
+        return True
+    else:
+        return False
+    
+word = input("enter a word:")
+    
+if palindrome(word):
+    print("Entered string is a palindrome")
+
+else:
+    print("Enterd string is not a palindrome")
