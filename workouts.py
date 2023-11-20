@@ -178,4 +178,42 @@ for i in range(1,num+1):
         print("*",end = "")
     print()
 
+# Grades are computed using a weighted average. Suppose that the written test counts 70%,
+# lab exams 20% and assignments 10%.
+# If Arun has a score of
+# Written test = 81
+# Lab exams = 68
+# Assignments = 92
+# Arun’s overall grade = (81x70)/100 + (68x20)/100 + (92x10)/100 = 79.5
+# Write a program to find the grade of a student during his academic year.
+# a. Program should accept the scores for written test, lab exams and assignments
+# b. Output the grade of a student (using weighted average)
+# Eg:
+# Enter the marks scored by the students
+# Written test = 55
+# Lab exams = 73
+# Assignments = 87
+# Grade of the student is 61.8
 
+class Average:
+    def __init__(self,written_test,lab_exams,Assignments):
+        self.written_test = written_test
+        self.lab_exams = lab_exams
+        self.Assignments = Assignments
+
+    def Avg(self):
+        result = (self.written_test*70)/100+(self.lab_exams*20)/100+(self.Assignments*10)/100
+        return result
+    
+written_test = int(input("Enter your written test mark :"))
+lab_test = int(input("enter your lab exam mark:"))
+Assignment = int(input("Enter your Assignment Mark:"))  
+    
+student = Average(written_test,lab_test,Assignment)
+
+k = student.Avg()
+print("Grade of the student:",k)
+
+
+
+        
