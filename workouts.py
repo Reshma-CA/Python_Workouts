@@ -91,6 +91,8 @@ for i in range (1,11):
     k = i*num
     print(f" {i} x {num} = {k}")
 
+    # or
+
 for i in range(1,11):
     print(f"{i} x {num} = {i*num}")
 
@@ -178,22 +180,22 @@ for i in range(1,num+1):
         print("*",end = "")
     print()
 
-# Grades are computed using a weighted average. Suppose that the written test counts 70%,
-# lab exams 20% and assignments 10%.
-# If Arun has a score of
-# Written test = 81
-# Lab exams = 68
-# Assignments = 92
-# Arun’s overall grade = (81x70)/100 + (68x20)/100 + (92x10)/100 = 79.5
-# Write a program to find the grade of a student during his academic year.
-# a. Program should accept the scores for written test, lab exams and assignments
-# b. Output the grade of a student (using weighted average)
-# Eg:
-# Enter the marks scored by the students
-# Written test = 55
-# Lab exams = 73
-# Assignments = 87
-# Grade of the student is 61.8
+'''12, Grades are computed using a weighted average. Suppose that the written test counts 70%,
+lab exams 20% and assignments 10%.
+If Arun has a score of
+Written test = 81
+Lab exams = 68
+Assignments = 92
+Arun’s overall grade = (81x70)/100 + (68x20)/100 + (92x10)/100 = 79.5
+Write a program to find the grade of a student during his academic year.
+a. Program should accept the scores for written test, lab exams and assignments
+b. Output the grade of a student (using weighted average)
+Eg:
+Enter the marks scored by the students
+Written test = 55
+Lab exams = 73
+Assignments = 87
+Grade of the student is 61.8'''
 
 class Average:
     def __init__(self,written_test,lab_exams,Assignments):
@@ -215,5 +217,56 @@ k = student.Avg()
 print("Grade of the student:",k)
 
 
+# 13, To find the square of the sum of even numbers.
 
-        
+list_data = []
+n = int(input("Enter list limit:"))
+
+for i in range (n):
+    list_data.append((int(input("Enter numbers:"))))
+
+sum = 0
+for i in list_data:
+    if i%2==0:
+        even_sq = i**2
+        sum+=even_sq
+
+print("Square of the sum of the even numbers",sum)
+
+
+# 14, Recursion
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+# Usage
+result = factorial(5)  # Calculates 5!
+print(result)  # Output: 120
+ 
+# list Comprehension
+
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+
+newlist = [x for x in fruits if "a" in x]
+
+print(newlist)
+
+# Using list comprehension
+squares = [i * i for i in range(5)]
+
+# Using list comprehension with a condition
+even_numbers = [i for i in range(10) if i % 2 == 0]
+
+
+# 15, Write a program to remove duplicate elements in a list?
+
+string = input("Enter  a word:")
+list1 = []
+for i in string:
+    if i  not in list1:
+        list1.append(i)
+
+output = " ".join(list1)
+print(output)
