@@ -270,3 +270,14 @@ for i in string:
 
 output = " ".join(list1)
 print(output)
+
+     #or
+
+string1 = input("Enter a word:")
+
+empty_set = set()
+for i in string1:
+    if i not in empty_set:
+        empty_set.add(i)
+output = " ".join(empty_set)
+print(output)
